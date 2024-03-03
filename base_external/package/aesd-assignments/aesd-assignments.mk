@@ -13,10 +13,9 @@ AESD_ASSIGNMENTS_VERSION = '#COMMIT VERSION NUMBER'
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-zaransage.git/commit/a742b0b97f3b772d1dba6871550e93e3a847003b'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
-CCACHE_OPTIONS="--zero-stats" ccache-options
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) all
 endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
