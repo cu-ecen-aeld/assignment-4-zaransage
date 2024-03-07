@@ -34,6 +34,8 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
  $(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin/writer
  $(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment4/* $(TARGET_DIR)/bin
 
+ export PATH := $(TARGET_DIR)/finder-app:$(TARGET_DIR)/bin:$(TARGET_DIR)/usr/bin:$(TARGET_DIR)/etc:$PATH
+
 endef
 
 $(eval $(generic-package))
