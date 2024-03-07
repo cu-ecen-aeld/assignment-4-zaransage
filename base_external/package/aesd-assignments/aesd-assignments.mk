@@ -6,7 +6,8 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 'a742b0b97f3b772d1dba6871550e93e3a847003b'
+#AESD_ASSIGNMENTS_VERSION = 'a742b0b97f3b772d1dba6871550e93e3a847003b'
+AESD_ASSIGNMENTS_VERSION = 'a949c67'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -19,12 +20,6 @@ define AESD_ASSIGNMENTS_BUILD_CMDS
 endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
-#
-#
-#
-
-#
-
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
  $(INSTALL) -d 0755 $(@D)/finder-app/conf/ $(TARGET_DIR)/etc/finder-app/conf/
