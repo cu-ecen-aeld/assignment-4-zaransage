@@ -29,7 +29,7 @@ endef
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
  $(INSTALL) -d 0755 $(@D)/finder-app/conf/ $(TARGET_DIR)/etc/finder-app/conf/
  $(INSTALL) -m 0755 $(@D)/finder-app/conf/* $(TARGET_DIR)/etc/finder-app/conf/
- $(INSTALL) -d 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/finder.sh
+ cp $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/finder.sh
 
 endef
 
